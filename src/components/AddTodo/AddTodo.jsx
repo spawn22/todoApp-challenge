@@ -15,6 +15,7 @@ function AddTodo({addTask}) {
     <form onSubmit={handleSubmit}>
         <input
         type="text"
+        maxLength={40}
         placeholder="Agregar Tarea"
         value={taskName}
         onChange={(e) => setTaskName(e.target.value)}
