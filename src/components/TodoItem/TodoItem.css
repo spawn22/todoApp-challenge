@@ -5,7 +5,7 @@
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  max-width: auto;
+  max-width: 700px;
   min-width: auto;
 }
 
@@ -20,12 +20,13 @@
   width: 100%;
 }
 
-
 .check-todo {
   margin-right: 2rem;
 }
 
 .todo-title {
+  display: flex;
+  justify-content: center;
   margin-left: 0.75em;
   font-weight: bold;
   font-size: 20px;
@@ -34,8 +35,10 @@
   flex-wrap: wrap;
 }
 
-.todo-title-conteiner{
+.todo-title-container {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .edit-input {
@@ -51,10 +54,9 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
-  
 }
 .list-todo_btn:hover {
   border-color: #646cff;
@@ -68,7 +70,26 @@
 }
 
 .right-side-buttons {
-  margin-left: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: auto; // Ajusta automáticamente el ancho.
+    padding-left: 1rem; // Reduce los paddings laterales.
+    padding-right: 1rem;
+  }
+
+  .todo-item-conteiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .todo-title-container {
+    flex-wrap: wrap;
+  }
 }

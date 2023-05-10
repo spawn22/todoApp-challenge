@@ -16,13 +16,13 @@
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
   margin-left: 3.3px;
 }
 .add-todo_btn:hover {
-  border-color: #646cff;
+  border-color: blue;
 }
 .add-todo_btn:focus,
 .add-todo_btn:focus-visible {
