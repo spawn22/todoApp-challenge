@@ -1,0 +1,56 @@
+.card {
+  max-width: 600px;
+  background-color: #303030;
+  border-radius: 1px;
+  box-shadow: rgba(149, 157, 165, 0 0.2) 0 px4 px24 px;
+  padding: 1rem;
+}
+
+.todo-item-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.todo-item input[type="checkbox"] {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.todo-title {
+  margin-left: 0.75em;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.edit-input {
+  flex-grow: 1;
+  height: 30px;
+  padding: 0.25em;
+  font-size: 1rem
+}
+.list-todo_btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 3.3px;
+}
+.list-todo_btn:hover {
+  border-color: #646cff;
+}
+.list-todo_btn:focus,
+.list-todo_btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.todo-title-completed {
+  text-decoration: line-through;
+}
