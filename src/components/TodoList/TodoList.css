@@ -28,3 +28,7 @@
   .paginated-btn:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }
+
+.paginated-container{
+  margin-top: 2rem;
+}

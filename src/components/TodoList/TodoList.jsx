@@ -7,7 +7,7 @@ function TodoList() {
   const [todos, setTodos] = useState(Data);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 7;
+  const itemsPerPage = 5;
 
   const addTask = (taskName) => {
     const newTask = { id: Date.now(), title: taskName, completed: false };
@@ -61,19 +61,21 @@ function TodoList() {
             toggleCompletion={toggleCompletion}
           />
         ))}
-      <button
-        onClick={() => handlePageChange(currentPage - 1)}
-        className="paginated-btn"
-      >
-        Anterior
-      </button>
-      <span className="current-page-span">{currentPage}</span>
-      <button
-        onClick={() => handlePageChange(currentPage + 1)}
-        className="paginated-btn"
-      >
-        Siguiente
-      </button>
+      <div className="paginated-container">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          className="paginated-btn"
+        >
+          Anterior
+        </button>
+        <span className="current-page-span">{currentPage}</span>
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          className="paginated-btn"
+        >
+          Siguiente
+        </button>
+      </div>
     </div>
   );
 }

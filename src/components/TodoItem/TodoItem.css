@@ -1,13 +1,12 @@
 .card {
-  max-width: auto;
-  min-width: auto;
   background-color: #303030;
   border-radius: 1px;
   box-shadow: rgba(149, 157, 165, 0 0.2) 0 px4 px24 px;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 50rem;
+  max-width: auto;
+  min-width: auto;
 }
 
 .todo-item-conteiner {
